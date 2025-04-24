@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <input type="checkbox" id="popupTrigger1" hidden>
+    
+    <label for="popupTrigger1">
+        <img src="minia1.png" alt="Cliquez pour voir la vidéo" id="videoThumbnail">
+    </label>
+
+    <div class="videoPopup">
+        <label for="popupTrigger1" id="closeBtn">&times;</label>
+        <video controls autoplay>
+            <source src="video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <input type="checkbox" id="popupTrigger2" hidden>
+
+    <label for="popupTrigger2">
+      <img src="minia3.png" alt="Cliquez pour voir la vidéo" id="videoThumbnail">
+  </label>
+
+    <div class="videoPopup">
+      <label for="popupTrigger2" id="closeBtn">&times;</label>
+      <video controls autoplay>
+          <source src="video2.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <input type="checkbox" id="popupTrigger3" hidden>
+
+  <label for="popupTrigger3">
+    <img src="minia2.png" alt="Cliquez pour voir la vidéo" id="videoThumbnail">
+</label>
+    
+<div class="videoPopup">
+    <label for="popupTrigger3" id="closeBtn">&times;</label>
+    <video controls autoplay>
+        <source src="video3.mp4" type="video/mp4">
+    </video>
+</div>
+
+</body>
+</html>
