@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+video {
+    position: fixed;
+    min-width: 100%;
+  min-height: 100%;
+  object-fit: cover; /* prends toute la place de la page  */
+   z-index: -1; /* Pour que la vidéo reste toujours derrière */
+}
+
+
+.divtexte{
+    display: flex;
+    position: absolute;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+.textevideo {
+    color: black;
+  background-color: white;
+    font-size:  550px;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  mix-blend-mode: screen;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+  transition: 1s;
+
+}
+
+.textevideo:hover {
+    opacity: 0;
+
+}
