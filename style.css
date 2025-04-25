@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@font-face {
+  font-family: 'dancing script';
+  src: url(/DancingScript-VariableFont_wght.ttf);
+}
+html{
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+body {
+  background-color: #bfb6fb;;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: "dancing script";
+  text-align: center;
+  font-size: 5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap : 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  flex-grow: 1;
+  height: 65vh;
+}
+
 .videoPopup {
   display: none;
   position: fixed;
@@ -25,14 +62,27 @@
 
 #closeBtn {
   position: absolute;
-  top: 10px;
-  right: 20px;
   font-size: 30px;
-  color: white;
+  color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 video {
   max-width: 80%;
   max-height: 80%;
+}
+
+#videoThumbnail{
+scale: 1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#videoThumbnail:hover{
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }

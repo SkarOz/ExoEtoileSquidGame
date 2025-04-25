@@ -10,18 +10,23 @@
 
 <body>
 
+  <h1>Pop Up Video on click</h1>
+
+<div class="container">
+
+
   <input type="checkbox" id="popupTrigger1" hidden>
     
-    <label for="popupTrigger1">
+    <label for="popupTrigger1" class="labelvideo">
         <img src="minia1.png" alt="Cliquez pour voir la vidéo" id="videoThumbnail">
     </label>
 
     <div class="videoPopup">
         <label for="popupTrigger1" id="closeBtn">&times;</label>
-        <video controls autoplay>
-            <source src="video1.mp4" type="video/mp4">
+        <video controls muted>
+          <source src="video1.mp4" type="video/mp4">
         </video>
-    </div>
+   </div>
 
     <input type="checkbox" id="popupTrigger2" hidden>
 
@@ -31,7 +36,7 @@
 
     <div class="videoPopup">
       <label for="popupTrigger2" id="closeBtn">&times;</label>
-      <video controls autoplay>
+      <video controls muted>
           <source src="video2.mp4" type="video/mp4">
       </video>
   </div>
@@ -44,10 +49,11 @@
     
 <div class="videoPopup">
     <label for="popupTrigger3" id="closeBtn">&times;</label>
-    <video controls autoplay>
+    <video controls muted>
         <source src="video3.mp4" type="video/mp4">
     </video>
 </div>
 
+</div>
 </body>
 </html>
