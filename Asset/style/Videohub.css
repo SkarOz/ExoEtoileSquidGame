@@ -8,9 +8,12 @@ body {
     justify-items: center;
     align-items: center;
 }
+
 h1 {
     font: size 50px; ;
 }
+
+/* Projet */
 .pjt {
     flex-direction: row;
     display: flex;
@@ -34,6 +37,8 @@ h1 {
     background-color: #a5a5a5;
 }
 
+/* liste */
+
 .list {
     display: flex;
     align-items: center;
@@ -46,6 +51,8 @@ h1 {
     padding: 10px;
 
 }
+
+/* Footer */
 
 .FTA {
     display: flex;
